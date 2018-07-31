@@ -58,7 +58,7 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/txtcarpeta"
+            android:id="@+id/textCarpeta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|end"
@@ -68,7 +68,7 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/openDialogButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -98,7 +98,7 @@
         </ScrollView>
 
         <VideoView
-            android:id="@+id/videoView2"
+            android:id="@+id/videoView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
