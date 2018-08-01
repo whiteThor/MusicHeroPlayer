@@ -17,7 +17,7 @@ public class PlayerService extends Service {
     public void onCreate() {
         Log.d(TAG,"On Create Service");
         super.onCreate();
-     //   mMediaPlayer = MediaPlayer.create()
+        //mMediaPlayer = MediaPlayer.create();
 
     }
 
@@ -33,4 +33,22 @@ public class PlayerService extends Service {
         Log.d(TAG,"On Bind Service");
         return null;
     }
+
+    public boolean isPlaying(){
+        return mMediaPlayer.isPlaying();
+    }
+
+    public void play(){
+        mMediaPlayer.start();
+    }
+
+    public void pause(){
+        mMediaPlayer.pause();
+    }
+
+    public void stop(){
+        mMediaPlayer.stop();
+    }
+
+
 }

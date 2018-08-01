@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 
@@ -40,7 +39,7 @@ public class FragmentPrincipal extends Fragment  {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==123 && resultCode == -1){ //)
             Uri selectedFile = data.getData();
-            mtextCarpeta.setText(selectedFile.getPath());
+            mtextCarpeta.setText(selectedFile.getScheme());
             }
     }
 
